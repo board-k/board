@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+.text {
+	margin: 10px;
+	font-family: 'Itim', cursive;
+    height: 90%;
+    width: 90%;
+    text-overflow: clip;
+    text-align: center;
+    font-weight: bold;
+	font-size: 12px;
+}
+
+div#frame {
+	padding: 32px 64px;
+    display: inline-block;
+    text-align: center;
+}
+
+div#background {
+    height: 90%;
+	width: 10076px;
+	background: url(Img/cork-board.png), rgba(255, 255, 255, 0.5);
+	background-repeat: repeat;
+    background-size: contain;
+	-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out; 
+	-webkit-transition: all .5s ease-in-out;
+	transform: scale(0.98);
+	overflow: hidden;
+	position: absolute;
+	animation: slide 60s linear infinite;
+}
+
+div#frame a.note {
+	-transition: all .15s ease-in-out;
+	-moz-transition: all .15s ease-in-out; 
+	-webkit-transition: all .15s ease-in-out; 
+	cursor: pointer;
+	display: block;
+}
+
+div#frame a:hover.note {
+	-webkit-transform: scale(2) !important;
+	-moz-transform: scale(2) !important;
+	transform: scale(2) !important;
+    padding: 2px;
+    margin: 8px;
+    z-index: 9999;
+    position: relative;
+}
+
+#title {
+    padding-top: 48px;
+	font-family: 'Itim', cursive;
+    font-size:xx-large;
+    text-align: center;
+	-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out; 
+	-webkit-transition: all .5s ease-in-out;
+	transform: scale(0.9);
+}
+
+.emoji {
+	width: 96px;
+	height: 96px;
+	padding-top: 32px;
+    float: left;
+    z-index: 2;
+    position: relative;
+}
+
+.emoji .text{
+	font-size: 64px;
+}
+
+.note {
+	width: 160px;
+	height: 160px;
+	box-shadow: 0 3px 6px rgba(0,0,0,.4);
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.4);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.4);
+	float: left;
+	margin: 10px;
+    background-color: white;
+    z-index: 1;
+    position: relative;
+}
+
+.small {
+	font-size: 8px;
+}
+
+#bgBorder{
+    height: 90%;
+	width: 99%;
+	overflow: hidden;
+	position: absolute;
+}
+
+@keyframes slide{
+	0%{
+	  transform: translate3d(0, 0, 0);
+	}
+	100%{
+	  transform: translate3d(-1692px, 0, 0);
+	}
+}
+
+.img img{
+	width: 90%;
+	height: 90%;
+	margin: 5%;
+}
